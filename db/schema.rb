@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2021_12_07_134000) do
     t.string "name"
     t.integer "age"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["name"], name: "index_users_on_name", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
